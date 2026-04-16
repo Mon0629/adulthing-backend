@@ -21,6 +21,7 @@ public class SecurityConfig {
         .requestMatchers(
         "/auth/**",
             "/health",
+            "/test/**",
             "/error"
         ).permitAll()
         .requestMatchers("/user/**").hasRole("USER")
